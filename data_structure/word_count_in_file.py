@@ -14,6 +14,6 @@ def count_words(file_path):
 
 
 if __name__ == "__main__":
-    file_path = 'C:\\Users\ADMIN\Documents\AIO_Homework\data_structure\P1_data.txt'
+    file_path = 'C:\\Users\\ADMIN\\Documents\\AIO_Homework\\data_structure\\P1_data.txt'
     result = count_words(file_path)
     print(result)

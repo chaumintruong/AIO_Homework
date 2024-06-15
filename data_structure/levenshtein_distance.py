@@ -8,10 +8,11 @@ def levenshtein_distance(token1, token2):
                 dp[i][j] = j
             elif j == 0:
                 dp[i][j] = i
-            elif token1[i-1] == token2[j-1]:
-                dp[i][j] = dp[i-1][j-1]
+            elif token1[i - 1] == token2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1]
             else:
-                dp[i][j] = 1 + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])
+                dp[i][j] = 1 + min(dp[i - 1][j], dp[i]
+                                   [j - 1], dp[i - 1][j - 1])
 
     return dp[m][n]
 
